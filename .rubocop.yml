@@ -1,0 +1,21 @@
+---
+AllCops:
+  Exclude:
+    - 'tmp/**/*'
+    - 'db/**/*'
+    - 'vendor/**/*'
+    - bin/bundle
+  NewCops: enable
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/HashSyntax:
+  EnforcedShorthandSyntax: never
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*_spec.rb'
