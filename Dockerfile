@@ -15,7 +15,7 @@ COPY Gemfile Gemfile.lock ./
 RUN gem install bundler -v 2.3.26
 RUN bundle config --global jobs `grep -c cores /proc/cpuinfo` && \
     bundle config --delete bin
-# RUN bundle install
+RUN bundle install
 
 COPY . .
 
